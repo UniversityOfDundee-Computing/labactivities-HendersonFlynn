@@ -1,0 +1,36 @@
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#background {
+    background-image: url('https://img.freepik.com/premium-vector/old-paper-texture-background_108964-98.jpg?w=2000');
+}
+
+h1{
+    font-size: 50px;
+    color: darkslategray;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    color: darkslategray;
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+ol {
+    font-family: 'Brush Script MT', cursive;
+}
+
+ul {
+    font-family: 'Brush Script MT', cursive;
+}
+
+p {
+    font-size: 15px;
+}
