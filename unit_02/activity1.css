@@ -5,12 +5,14 @@ header {
 
 #background {
     background-image: url('https://img.freepik.com/premium-vector/old-paper-texture-background_108964-98.jpg?w=2000');
+    box-shadow: 0 0 20px 20px bisque;
 }
 
 h1{
     font-size: 50px;
     color: darkslategray;
     text-align: center;
+    text-decoration: underline;
 }
 
 h2{
@@ -58,3 +60,9 @@ p {
     display: inline;
 }
 
+
+table, th, td {
+    border:2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
