@@ -14,8 +14,12 @@ h1{
 }
 
 h2{
-    font-size: 25px;
     color: darkslategray;
+    text-align: center;
+}
+
+a{
+    font-size: 100px;
 }
 
 footer {
@@ -25,12 +29,16 @@ footer {
 
 ol {
     font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
 }
 
 ul {
     font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
 }
 
 p {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
