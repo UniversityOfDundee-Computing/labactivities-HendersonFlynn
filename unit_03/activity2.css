@@ -27,5 +27,6 @@ li a:hover {
 .menu{
     max-width: 960px;
     background-color: wheat;
+    margin: auto;
 
 }
