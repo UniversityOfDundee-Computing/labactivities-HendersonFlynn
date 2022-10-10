@@ -20,4 +20,13 @@ li a {
 
 li a:hover {
     background-color: #111;
+}body{
+    background-color: purple;
+}
+
+.menu{
+    max-width: 960px;
+    background-color: wheat;
+    margin: auto;
+
 }
