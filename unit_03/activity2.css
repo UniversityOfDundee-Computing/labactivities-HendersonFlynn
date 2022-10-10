@@ -21,3 +21,9 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+body {
+    max-width: 960px;
+    background-color: wheat;
+
+}
