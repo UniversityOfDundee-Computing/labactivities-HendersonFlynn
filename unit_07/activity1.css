@@ -1,0 +1,61 @@
+.colourBox{
+    width: 12%;
+    aspect-ratio: 1;
+    padding: auto;
+    display: inline-block;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#blackBox{
+    width: 100%;
+    aspect-ratio: 8;
+    margin-bottom: 30px;
+    background-color: black;
+
+}
+
+.spacer{
+    width: 0.5%;
+    display: inline-block;
+}
+
+.spacer2{
+    width: 1%;
+    display: inline-block;
+}
+
+#red{
+    background-color: red;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#lime{
+    background-color: lime;
+}
+
+#green{
+    background-color: green;
+}
+
+#cyan{
+    background-color: cyan;
+}
+
+#light-blue{
+    background-color: lightblue;
+}
+
+#blue{
+    background-color: blue;
+}
