@@ -2,3 +2,20 @@ main {
     max-width: 1000px;
     margin: auto;
 }
+
+
+.LessThanFive {
+    background-color: blue;
+    font-size: 200px;
+}
+
+
+.BetweenFiveAndTen {
+    background-color: blueviolet;
+    font-size: 200px;
+}
+
+.GreaterThanTen {
+    background-color: red;
+    font-size: 200px;
+}
