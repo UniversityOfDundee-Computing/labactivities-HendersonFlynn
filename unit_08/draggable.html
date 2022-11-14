@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+  #draggable { width: 150px; height: 150px; border-style: solid; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable({ axis: "x" });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+ 
+ 
+</body>
+</html>
