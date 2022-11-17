@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!--Import Bootstrap to make life easier-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="activity1.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -12,25 +13,52 @@
     <title>tips</title>
 </head> 
 <body>
-    <main>
-        <h1>Tip Calculator</h1>
-
-        <p>Enter Total Bill Amount</p>
-        <input id="Tip" type="text">
-
-        <div>
-            <p>Select Tip Preference</p>
-
-            <button id="5Percent">5%</button>
-            <button id="10Percent">10%</button>
-            <button id="25Percent">25%</button><br>
-
-            <button id="25PercentORTwo">Largest from 25% or £2+10%</button>
-
-            <p>Tip to Give</p>
-
-            <h2 id="processedTip">£xx.xx</h2>
+    <div class="container">
+        <div class="container text-justify p-2">
+            <h1>Tip Calculator</h1> 
         </div>
-    </main>
+        <div class="row">
+            <div class="col">
+                <p>Enter Total Bill Amount</p>
+                <h1 id ="Tip"></h1>
+            </div>
+        </div>
+         <!--I have no diea if this will work-->
+        <div class="row row-cols-2 text-center" id="selectable">
+            <div class="col ui-widget-content">£0.01</div>
+            <div class="col ui-widget-content">£0.05</div>
+            <div class="col ui-widget-content">£0.10</div>
+            <div class="col ui-widget-content">£0.50</div>
+            <div class="col ui-widget-content">£1</div>
+            <div class="col ui-widget-content">£10</div>
+            <div class="col ui-widget-content">£50</div>
+            <div class="col ui-widget-content">£100</div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Select Tip Preference</p>
+                    <div class="col p-2">
+                        <button id="5Percent">5%</button>
+                    </div>
+                    <div class="col p-2">
+                        <button id="10Percent">10%</button>
+                    </div>
+                    <div class="col p-2">
+                        <button id="25Percent">25%</button><br>
+                    </div>
+                    <div class="col p-2">
+                        <button id="25PercentORTwo">Largest from 25% or £2+10%</button>
+                    </div>
+
+                    <p>Tip to Give</p>
+
+                    <h2 id="processedTip">£xx.xx</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
