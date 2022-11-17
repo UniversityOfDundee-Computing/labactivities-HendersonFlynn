@@ -3,7 +3,6 @@ main {
     margin: auto;
 }
 
-
 .LessThanFive {
     background-color: blue;
     font-size: 200px;
@@ -19,3 +18,7 @@ main {
     background-color: red;
     font-size: 200px;
 }
+
+
+#selectable .ui-selecting { background: green;}
+#selectable .ui-selected { background: darkgreen; color: white;}
