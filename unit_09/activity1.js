@@ -1,17 +1,22 @@
 function createNode(element) {
     return document.createElement(element);
   }
-
   function append(parent, el) {
     return parent.appendChild(el);
   }
-
   const movieContainer = document.getElementById('movieContainer');
-  const searchInput = document.getElementById("searchInput");
   const searchButton = document.getElementById("searchButton");
   searchButton.addEventListener("click", function (event){
+    if (movieContainer.hasChildNodes()) {
+      movieContainer.innerHTML = '';
+
+    }
+    console.log(movieContainer.parentNode);
     event.preventDefault();
-    const url = 'http://www.omdbapi.com/?s=Harry+Potter&apikey=8161c153';
+    const searchInput = document.getElementById("searchInput").value;
+    let url = `http://www.omdbapi.com/?s=${searchInput.split(' ').join('+')}/&apikey=8161c153`;
+    console.log(url);
+    console.log(searchInput);
     fetch(url)
         .then((resp) => resp.json())
         .then(function(data) {
@@ -25,7 +30,7 @@ function createNode(element) {
                 cardText = createNode("p");
 
             cardContainer.setAttribute("class", "col-4 mb-3");
-            card.setAttribute("class", "card");
+            card.setAttribute("class", "card h-100");
             cardImg.setAttribute("class", "card-img-top");
             cardImg.setAttribute("src", movie["Poster"]);
             cardBody.setAttribute("class", "card-body");
@@ -34,19 +39,18 @@ function createNode(element) {
             cardText.setAttribute("class", "card-text");
             cardText.innerHTML = movie["Year"];
 
+
             append(cardBody, cardTitle);
             append(cardBody, cardText);
             append(card, cardImg);
             append(card, cardBody);
             append(cardContainer, card);
             append(movieContainer, cardContainer);
-        });
-    })
-
-  
+        })
     })
     .catch(function(error) {
       console.log(error);
-    });
-
+    })
+ })
+  
 
