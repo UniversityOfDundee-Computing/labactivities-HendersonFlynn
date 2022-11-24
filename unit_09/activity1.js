@@ -23,7 +23,7 @@ function makeUrlTitle(title) {
     }
     console.log(movieContainer.parentNode);
     event.preventDefault();
-    let movieTitle = makeUrlTitle(searchInput.ariaValueMax.split(" "))
+    let movieTitle = makeUrlTitle(searchInput.value.split(" "))
 
     let url = "https://www.omdbapi.com/?s=" + movieTitle + "&apikey=8161c153";
     console.log(url);
