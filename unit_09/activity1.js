@@ -5,7 +5,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-
+//making a function to effectively perform .join() beacuse for some reason it doesn't like it being performed in the url variable
 function makeUrlTitle(title) {
   let temp = "";
   for (let i of title) {
@@ -13,6 +13,8 @@ function makeUrlTitle(title) {
   }
   return temp.slice(0, -1);
 }
+
+
   const searchInput = document.getElementById("searchInput");
   const movieContainer = document.getElementById('movieContainer');
   const searchButton = document.getElementById("searchButton");
