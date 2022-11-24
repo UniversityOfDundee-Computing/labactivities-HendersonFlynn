@@ -4,15 +4,6 @@ function createNode(element) {
 function append(parent, el) {
     return parent.appendChild(el);
 }
-
-function secureTitle(title) {
-  let secureTitleVar = "";
-  for (let titlePart of title) {
-    secureTitleVar += (titlePart + "+");
-
-  }
-  return secureTitleVar.slice(0, -1);
-}
   const searchInput = document.getElementById("searchInput");
   const movieContainer = document.getElementById('movieContainer');
   const searchButton = document.getElementById("searchButton");
@@ -23,9 +14,7 @@ function secureTitle(title) {
     }
     console.log(movieContainer.parentNode);
     event.preventDefault();
-
-    let searchInputTitleAddendum = secureTitle(searchInput.value.split(" "))
-    let url = "http://www.omdbapi.com/?s=" + searchInputTitleAddendum + "&apikey=8161c153";
+    let url = `https://www.omdbapi.com/?s=${searchInput.split(' ').join('+')}/&apikey=8161c153`;
     console.log(url);
     console.log(searchInput);
     fetch(url)
