@@ -28,29 +28,36 @@ function createNode(element) {
                 cardBody = createNode("div"),
                 cardTitle = createNode("h5"),
                 cardText = createNode("p");
+                cardButton = createNode("a")
 
             cardContainer.setAttribute("class", "col-4 mb-3");
             card.setAttribute("class", "card h-100");
-            cardImg.setAttribute("class", "card-img-top");
+            cardImg.setAttribute("class", "card-img-top h-75");
             cardImg.setAttribute("src", movie["Poster"]);
             cardBody.setAttribute("class", "card-body");
             cardTitle.setAttribute("class", "card-title mb-0");
             cardTitle.innerHTML = movie["Title"];
             cardText.setAttribute("class", "card-text");
             cardText.innerHTML = movie["Year"];
-
+            cardButton.setAttribute("class", "btn btn-primary pt-2");
+            cardButton.setAttribute("href", ("singleMovie.html?" + movie["imdbID"]))
+            cardButton.innerHTML = ("More Information")
 
             append(cardBody, cardTitle);
             append(cardBody, cardText);
+            append(cardBody, cardButton);
             append(card, cardImg);
             append(card, cardBody);
             append(cardContainer, card);
             append(movieContainer, cardContainer);
+
         })
     })
     .catch(function(error) {
       console.log(error);
     })
  })
+
+
   
 
